@@ -1,18 +1,18 @@
+```html
 <div align="center">
 
 <h1>In the name of God</h1>
 
-<!-- Language switch -->
 <table>
   <tr>
     <td>
       <a href="README.fa.md">
-        <img src="https://readmeforge.natrajx.in/api/badge?label=&value=فارسی&color=0000FF&shape=pill&height=36" alt="فارسی" height="36" />
+        <img src="https://img.shields.io/badge/فارسی-نسخهٔ_فارسی-0000FF?style=for-the-badge" alt="فارسی" height="36" />
       </a>
     </td>
     <td>
       <a href="README.md">
-        <img src="https://readmeforge.natrajx.in/api/badge?label=&value=English&color=555555&shape=pill&height=36" alt="English" height="36" />
+        <img src="https://img.shields.io/badge/English-You_are_here-555555?style=for-the-badge" alt="English" height="36" />
       </a>
     </td>
   </tr>
@@ -28,32 +28,30 @@
 
 <br />
 
-<!-- Info badges -->
 <table>
   <tr>
-    <td><img src="https://readmeforge.natrajx.in/api/badge?label=Claude&value=Skill&color=0000FF&shape=pill&height=32" alt="Claude Skill" height="32" /></td>
-    <td><img src="https://readmeforge.natrajx.in/api/badge?label=Modules&value=9&color=0000FF&shape=pill&height=32" alt="9 Modules" height="32" /></td>
-    <td><img src="https://readmeforge.natrajx.in/api/badge?label=License&value=MIT&color=0000FF&shape=pill&height=32" alt="MIT License" height="32" /></td>
-    <td><img src="https://readmeforge.natrajx.in/api/badge?label=Language&value=Auto%20detect&color=0000FF&shape=pill&height=32" alt="Auto detect" height="32" /></td>
+    <td><img src="https://img.shields.io/badge/Claude-Skill-0000FF?style=for-the-badge" alt="Claude Skill" height="32" /></td>
+    <td><img src="https://img.shields.io/badge/Modules-9-0000FF?style=for-the-badge" alt="9 Modules" height="32" /></td>
+    <td><img src="https://img.shields.io/badge/License-MIT-0000FF?style=for-the-badge" alt="MIT License" height="32" /></td>
+    <td><img src="https://img.shields.io/badge/Language-Auto_detect-0000FF?style=for-the-badge" alt="Auto detect" height="32" /></td>
   </tr>
 </table>
 
 <br /><br />
 
-<!-- Navigation buttons -->
 <table>
   <tr>
     <td>
-      <a href="#-install"><img src="https://readmeforge.natrajx.in/api/badge?label=&value=Install&color=0000FF&shape=pill&height=36" alt="Install" height="36" /></a>
+      <a href="#-install"><img src="https://img.shields.io/badge/Install-0000FF?style=for-the-badge" alt="Install" height="36" /></a>
     </td>
     <td>
-      <a href="#-modules"><img src="https://readmeforge.natrajx.in/api/badge?label=&value=Modules&color=0000FF&shape=pill&height=36" alt="Modules" height="36" /></a>
+      <a href="#-modules"><img src="https://img.shields.io/badge/Modules-0000FF?style=for-the-badge" alt="Modules" height="36" /></a>
     </td>
     <td>
-      <a href="#-how-it-works"><img src="https://readmeforge.natrajx.in/api/badge?label=&value=How%20it%20works&color=0000FF&shape=pill&height=36" alt="How it works" height="36" /></a>
+      <a href="#-how-it-works"><img src="https://img.shields.io/badge/How_it_works-0000FF?style=for-the-badge" alt="How it works" height="36" /></a>
     </td>
     <td>
-      <a href="#-principles"><img src="https://readmeforge.natrajx.in/api/badge?label=&value=Principles&color=0000FF&shape=pill&height=36" alt="Principles" height="36" /></a>
+      <a href="#-principles"><img src="https://img.shields.io/badge/Principles-0000FF?style=for-the-badge" alt="Principles" height="36" /></a>
     </td>
   </tr>
 </table>
@@ -61,3 +59,146 @@
 </div>
 
 ---
+
+Instagram HUB audits a page from a screenshot, scores it out of 10 and points out every flaw, then guides the user until the page reaches 10/10. After that it builds the posting schedule, Story plan, hashtags and natural captions, and can deliver a full one-month plan as an image.
+
+---
+
+## 📦 Modules
+
+| # | Module | File | Job |
+|:-:|---|---|---|
+| 1 | 🔍 **Audit** | `instagram-hub/audit.md` | Strict scoring of the profile from the screenshot, road to 10/10 |
+| 2 | 🔎 **Name search** | `instagram-hub/name-search.md` | Searchable display name and username |
+| 3 | ✍️ **Bio** | `instagram-hub/bio.md` | Bio, link and Highlights rewrite |
+| 4 | 🕒 **Schedule** | `instagram-hub/schedule.md` | Fixed weekly posting times from the user's own view hours |
+| 5 | 📱 **Stories** | `instagram-hub/stories.md` | Story times, content ideas, Story and Highlight covers |
+| 6 | 💡 **Content ideas** | `instagram-hub/content-ideas.md` | Post, Reels and carousel ideas |
+| 7 | #️⃣ **Hashtags** | `instagram-hub/hashtags.md` | Exactly 5 hashtags per post |
+| 8 | 💬 **Captions** | `instagram-hub/captions.md` | Natural, human, non-AI captions |
+| 9 | 📅 **Monthly plan** | `instagram-hub/monthly-plan.md` | Offers and delivers a 30-day plan as an image |
+
+> [!NOTE]
+> The entry point is `instagram-hub/SKILL.md`. It opens every conversation with a short blessing in the user's language (for example «به نام پروردگار» in Persian), collects the page info, and calls the modules in order.
+
+---
+
+## ⚙️ How it works
+
+```mermaid
+flowchart LR
+    A["1. Collect\npage info"] --> B["2. Audit\nscore /10\nevery flaw"]
+    B --> C["3. Improve\nname · bio\nstories"]
+    C --> D["4. Plan\nschedule ·\nposts · tags"]
+    D --> E["5. One-month plan\nimage (if approved)"]
+```
+
+**Information the skill asks for**
+
+| | Info |
+|:-:|---|
+| 1 | Instagram username |
+| 2 | Page name |
+| 3 | Page topic and audience |
+| 4 | Screenshot of the profile overview (profile top + post grid) |
+| 5 | Hours posts get views (from Insights) and the user's time zone |
+
+---
+
+## 🚀 Install
+
+> [!TIP]
+> **Quick install by URL (Claude Code):** give Claude the repository address and ask it to install the skill.
+
+```
+Download and install this skill: https://github.com/imatixofficel/Instagram-hub-skill
+```
+
+Claude reads `INSTALL.md` in the repo and places the files in `~/.claude/skills/instagram-hub/`. Or run the installer yourself:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/imatixofficel/Instagram-hub-skill/main/install.sh | bash
+```
+
+> [!IMPORTANT]
+> This needs network access to GitHub. In the claude.ai web/app version a skill must still be uploaded through **Settings → Capabilities**. Claude can download the files there but cannot add them to Settings by itself.
+
+<details>
+<summary><b>Claude (claude.ai / Claude app)</b></summary>
+
+1. Zip the `instagram-hub` folder so that `SKILL.md` is inside the folder.
+2. Open **Settings → Capabilities (Skills)** and upload the zip.
+3. Start a chat and ask Claude to review your Instagram page.
+
+</details>
+
+<details>
+<summary><b>Claude Code (manual copy)</b></summary>
+
+```bash
+# personal (all projects)
+cp -r instagram-hub ~/.claude/skills/
+
+# or per project
+cp -r instagram-hub .claude/skills/
+```
+
+</details>
+
+---
+
+## 🗂 Repo layout
+
+```
+Instagram-hub-skill/
+├── assets/
+│   └── logo.png          (circular logo)
+├── instagram-hub/
+│   ├── SKILL.md
+│   ├── audit.md
+│   ├── name-search.md
+│   ├── bio.md
+│   ├── schedule.md
+│   ├── stories.md
+│   ├── content-ideas.md
+│   ├── hashtags.md
+│   ├── captions.md
+│   └── monthly-plan.md
+├── INSTALL.md            (instructions Claude follows when given the repo URL)
+├── install.sh            (one-line installer)
+├── LICENSE
+├── .gitignore
+├── README.md             (English)
+└── README.fa.md          (Persian)
+```
+
+---
+
+## 🧭 Principles
+
+| | |
+|---|---|
+| ✅ **Honest** | No promises of views, followers or "first place in search" |
+| ✅ **Real** | Schedules come from the user's own Insights data; no invented numbers, reviews or stories |
+| ✅ **Natural** | Captions written like a real person, not like AI |
+| ✅ **Careful** | Corrects the user's typos quietly and writes in the user's language |
+| 🚫 **Clean** | Declines fake followers, bought engagement and spam |
+
+---
+
+## 🛠 Customizing
+
+Each module is a plain Markdown file with one job. Edit the rules in a module to change its behavior, or add a new `.md` file and register it in the module table and flow section of `SKILL.md`.
+
+---
+
+<div align="center">
+
+**MIT License** · see [`LICENSE`](LICENSE)
+
+Made with ☕ by **Matixhub**
+
+<a href="README.fa.md"><img src="https://img.shields.io/badge/فارسی-نسخهٔ_فارسی-0000FF?style=for-the-badge" alt="فارسی" height="36" /></a>
+
+</div>
+```
