@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Build output
+*.zip
+
+# Generated plans and screenshots from testing
+plan-week-*.png
