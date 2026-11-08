@@ -2,8 +2,7 @@
 
 <h1>به نام خدا</h1>
 
-<a href="README.md"><img src="https://img.shields.io/badge/English-Switch_to_English-0000FF?style=for-the-badge" alt="English" /></a>
-<a href="README.fa.md"><img src="https://img.shields.io/badge/%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-%D8%B4%D9%85%D8%A7_%D8%A7%DB%8C%D9%86%D8%AC%D8%A7%DB%8C%DB%8C%D8%AF-555555?style=for-the-badge" alt="فارسی" /></a>
+<a href="README.md"><img src="assets/btn-en.svg" alt="English" height="44" /></a>
 
 <br /><br />
 
@@ -13,15 +12,15 @@
 
 **مربی سخت‌گیر و صادق اینستاگرام، به صورت اسکیل Claude**
 
-![Claude Skill](https://img.shields.io/badge/Claude-Skill-0000FF?style=for-the-badge)
-![Modules](https://img.shields.io/badge/Modules-9-0000FF?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-0000FF?style=for-the-badge)
-![Languages](https://img.shields.io/badge/Language-Auto%20detect-0000FF?style=for-the-badge)
+![Claude Skill](assets/badge-claude-skill.svg)
+![Modules](assets/badge-modules.svg)
+![License](assets/badge-license.svg)
+![Languages](assets/badge-language.svg)
 
-[![نصب](https://img.shields.io/badge/⬇_%D9%86%D8%B5%D8%A8-0000FF?style=for-the-badge)](#-نصب)
-[![ماژول‌ها](https://img.shields.io/badge/📦_%D9%85%D8%A7%DA%98%D9%88%D9%84%E2%80%8C%D9%87%D8%A7-0000FF?style=for-the-badge)](#-ماژولها)
-[![روش کار](https://img.shields.io/badge/⚙_%D8%B1%D9%88%D8%B4_%DA%A9%D8%A7%D8%B1-0000FF?style=for-the-badge)](#-روش-کار)
-[![اصول](https://img.shields.io/badge/🧭_%D8%A7%D8%B5%D9%88%D9%84-0000FF?style=for-the-badge)](#-اصول)
+[![نصب](assets/nav-install-fa.svg)](#-نصب)
+[![ماژول‌ها](assets/nav-modules-fa.svg)](#-ماژولها)
+[![روش کار](assets/nav-how-fa.svg)](#-روش-کار)
+[![اصول](assets/nav-principles-fa.svg)](#-اصول)
 
 </div>
 
@@ -181,7 +180,7 @@ Instagram-hub-skill/
 
 ساخته‌شده توسط **Matixhub**
 
-<a href="README.md"><img src="https://img.shields.io/badge/English-Switch_to_English-0000FF?style=for-the-badge" alt="English" /></a>
+<a href="README.md"><img src="assets/btn-en.svg" alt="English" height="44" /></a>
 
 </div>
 

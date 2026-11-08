@@ -1,22 +1,8 @@
-```html
 <div align="center">
 
 <h1>In the name of God</h1>
 
-<table>
-  <tr>
-    <td>
-      <a href="README.fa.md">
-        <img src="https://img.shields.io/badge/فارسی-نسخهٔ_فارسی-0000FF?style=for-the-badge" alt="فارسی" height="36" />
-      </a>
-    </td>
-    <td>
-      <a href="README.md">
-        <img src="https://img.shields.io/badge/English-You_are_here-555555?style=for-the-badge" alt="English" height="36" />
-      </a>
-    </td>
-  </tr>
-</table>
+<a href="README.fa.md"><img src="assets/btn-fa.svg" alt="فارسی" height="44" /></a>
 
 <br /><br />
 
@@ -26,35 +12,15 @@
 
 **Strict, honest Instagram coach as a Claude skill**
 
-<br />
+![Claude Skill](assets/badge-claude-skill.svg)
+![Modules](assets/badge-modules.svg)
+![License](assets/badge-license.svg)
+![Languages](assets/badge-language.svg)
 
-<table>
-  <tr>
-    <td><img src="https://img.shields.io/badge/Claude-Skill-0000FF?style=for-the-badge" alt="Claude Skill" height="32" /></td>
-    <td><img src="https://img.shields.io/badge/Modules-9-0000FF?style=for-the-badge" alt="9 Modules" height="32" /></td>
-    <td><img src="https://img.shields.io/badge/License-MIT-0000FF?style=for-the-badge" alt="MIT License" height="32" /></td>
-    <td><img src="https://img.shields.io/badge/Language-Auto_detect-0000FF?style=for-the-badge" alt="Auto detect" height="32" /></td>
-  </tr>
-</table>
-
-<br /><br />
-
-<table>
-  <tr>
-    <td>
-      <a href="#-install"><img src="https://img.shields.io/badge/Install-0000FF?style=for-the-badge" alt="Install" height="36" /></a>
-    </td>
-    <td>
-      <a href="#-modules"><img src="https://img.shields.io/badge/Modules-0000FF?style=for-the-badge" alt="Modules" height="36" /></a>
-    </td>
-    <td>
-      <a href="#-how-it-works"><img src="https://img.shields.io/badge/How_it_works-0000FF?style=for-the-badge" alt="How it works" height="36" /></a>
-    </td>
-    <td>
-      <a href="#-principles"><img src="https://img.shields.io/badge/Principles-0000FF?style=for-the-badge" alt="Principles" height="36" /></a>
-    </td>
-  </tr>
-</table>
+[![Install](assets/nav-install.svg)](#-install)
+[![Modules](assets/nav-modules.svg)](#-modules)
+[![How it works](assets/nav-how.svg)](#-how-it-works)
+[![Principles](assets/nav-principles.svg)](#-principles)
 
 </div>
 
@@ -76,21 +42,27 @@ Instagram HUB audits a page from a screenshot, scores it out of 10 and points ou
 | 6 | 💡 **Content ideas** | `instagram-hub/content-ideas.md` | Post, Reels and carousel ideas |
 | 7 | #️⃣ **Hashtags** | `instagram-hub/hashtags.md` | Exactly 5 hashtags per post |
 | 8 | 💬 **Captions** | `instagram-hub/captions.md` | Natural, human, non-AI captions |
-| 9 | 📅 **Monthly plan** | `instagram-hub/monthly-plan.md` | Offers and delivers a 30-day plan as an image |
+| 9 | 🗓 **Monthly plan** | `instagram-hub/monthly-plan.md` | Offers and delivers a 30-day plan as an image |
 
 > [!NOTE]
 > The entry point is `instagram-hub/SKILL.md`. It opens every conversation with a short blessing in the user's language (for example «به نام پروردگار» in Persian), collects the page info, and calls the modules in order.
 
 ---
 
-## ⚙️ How it works
+## ⚙ How it works
 
-```mermaid
-flowchart LR
-    A["1. Collect\npage info"] --> B["2. Audit\nscore /10\nevery flaw"]
-    B --> C["3. Improve\nname · bio\nstories"]
-    C --> D["4. Plan\nschedule ·\nposts · tags"]
-    D --> E["5. One-month plan\nimage (if approved)"]
+```
+┌──────────────┐   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
+│  1. Collect  │ → │   2. Audit   │ → │  3. Improve  │ → │   4. Plan    │
+│  page info   │   │  score /10   │   │ name · bio   │   │ schedule ·   │
+│              │   │  every flaw  │   │ stories      │   │ posts · tags │
+└──────────────┘   └──────────────┘   └──────────────┘   └──────────────┘
+                                                                 │
+                                                                 ▼
+                                                      ┌────────────────────┐
+                                                      │ 5. One-month plan  │
+                                                      │ image (if approved)│
+                                                      └────────────────────┘
 ```
 
 **Information the skill asks for**
@@ -121,13 +93,13 @@ curl -fsSL https://raw.githubusercontent.com/imatixofficel/Instagram-hub-skill/m
 ```
 
 > [!IMPORTANT]
-> This needs network access to GitHub. In the claude.ai web/app version a skill must still be uploaded through **Settings → Capabilities**. Claude can download the files there but cannot add them to Settings by itself.
+> This needs network access to GitHub. In the claude.ai web/app version a skill must still be uploaded through Settings. Claude can download the files there but cannot add them to Settings by itself.
 
 <details>
 <summary><b>Claude (claude.ai / Claude app)</b></summary>
 
 1. Zip the `instagram-hub` folder so that `SKILL.md` is inside the folder.
-2. Open **Settings → Capabilities (Skills)** and upload the zip.
+2. Open Settings → Capabilities (Skills) and upload the zip.
 3. Start a chat and ask Claude to review your Instagram page.
 
 </details>
@@ -152,7 +124,7 @@ cp -r instagram-hub .claude/skills/
 ```
 Instagram-hub-skill/
 ├── assets/
-│   └── logo.png          (circular logo)
+│   └── logo.png         (circular logo)
 ├── instagram-hub/
 │   ├── SKILL.md
 │   ├── audit.md
@@ -164,12 +136,12 @@ Instagram-hub-skill/
 │   ├── hashtags.md
 │   ├── captions.md
 │   └── monthly-plan.md
-├── INSTALL.md            (instructions Claude follows when given the repo URL)
-├── install.sh            (one-line installer)
+├── INSTALL.md           (instructions Claude follows when given the repo URL)
+├── install.sh           (one-line installer)
 ├── LICENSE
 ├── .gitignore
-├── README.md             (English)
-└── README.fa.md          (Persian)
+├── README.md            (English)
+└── README.fa.md         (Persian)
 ```
 
 ---
@@ -194,11 +166,10 @@ Each module is a plain Markdown file with one job. Edit the rules in a module to
 
 <div align="center">
 
-**MIT License** · see [`LICENSE`](LICENSE)
+**MIT License** · see `LICENSE`
 
-Made with ☕ by **Matixhub**
+Made by **Matixhub**
 
-<a href="README.fa.md"><img src="https://img.shields.io/badge/فارسی-نسخهٔ_فارسی-0000FF?style=for-the-badge" alt="فارسی" height="36" /></a>
+<a href="README.fa.md"><img src="assets/btn-fa.svg" alt="فارسی" height="44" /></a>
 
 </div>
-```
